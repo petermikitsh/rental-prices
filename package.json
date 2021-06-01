@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/petermikitsh/rental-prices/issues"
   },
-  "homepage": "https://github.com/petermikitsh/rental-prices#readme"
+  "homepage": "https://github.com/petermikitsh/rental-prices#readme",
+  "devDependencies": {
+    "cypress": "^7.4.0"
+  }
 }
