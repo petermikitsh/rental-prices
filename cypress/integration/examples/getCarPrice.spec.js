@@ -35,7 +35,7 @@ context("getCarPrice", () => {
     });
     cy.get('[aria-modal="true"] button[type="Submit"]').click();
 
-    cy.wait(15000);
+    cy.wait(20000);
 
     cy.get("body").then(($body) => {
       let cost;
@@ -64,7 +64,7 @@ context("getCarPrice", () => {
           COST: cost,
         };
 
-        cy.writeFile("data/atl_car.txt", JSON.stringify(output), {
+        cy.writeFile("data/atl_car.txt", `\n${JSON.stringify(output)}`, {
           flag: "a+",
         });
       }
